@@ -19,34 +19,40 @@ C0D3R T34M = HelLocked.1453
 
 """+"\033[0m")
 
-#MD5
-key = raw_input( "Enter the anything : " )
-print("Your MD5 = " + hashlib.md5( key ).hexdigest())
+while 1:
 
-#SHA1
-sha1 = sha1(key.encode('utf-8'))
-print("Your SHA1 = " + sha1.hexdigest())
+  #MD5
+  key = raw_input( "Enter the anything : " )
+  print("\033[93m"+"Your MD5 = " + hashlib.md5( key ).hexdigest()+"\033[0m")
 
-#SHA224
-sifreleyici = hasher.sha224()
-sifreleyici.update(key.encode("utf-8"))
-hash = sifreleyici.hexdigest()
-print("Your SHA224 = " + hash)
+  #SHA1
+  sifreleyici = hasher.sha1()
+  sifreleyici.update(key.encode("utf-8"))
+  hash = sifreleyici.hexdigest()
+  print("\033[93m"+"Your SHA1 = " + hash+"\033[0m")
 
-#SHA256
-sifreleyici = hasher.sha256()
-sifreleyici.update(key.encode("utf-8"))
-hash = sifreleyici.hexdigest()
-print("Your SHA256 = " + hash)
+  #SHA224
+  sifreleyici = hasher.sha224()
+  sifreleyici.update(key.encode("utf-8"))
+  hash = sifreleyici.hexdigest()
+  print("\033[93m"+"Your SHA224 = " + hash+"\033[0m")
 
-#SHA384
-sifreleyici = hasher.sha384()
-sifreleyici.update(key.encode("utf-8"))
-hash = sifreleyici.hexdigest()
-print("Your SHA384 = " + hash)
+  #SHA256
+  sifreleyici = hasher.sha256()
+  sifreleyici.update(key.encode("utf-8"))
+  hash = sifreleyici.hexdigest()
+  print("\033[93m"+"Your SHA256 = " + hash+"\033[0m")
 
-#SHA512
-sifreleyici = hasher.sha512()
-sifreleyici.update(key.encode("utf-8"))
-hash = sifreleyici.hexdigest()
-print("Your SHA512 = " + hash)
+  #SHA384
+  sifreleyici = hasher.sha384()
+  sifreleyici.update(key.encode("utf-8"))
+  hash = sifreleyici.hexdigest()
+  print("\033[93m"+"Your SHA384 = " + hash+"\033[0m")
+
+  #SHA512
+  sifreleyici = hasher.sha512()
+  sifreleyici.update(key.encode("utf-8"))
+  hash = sifreleyici.hexdigest()
+  print("\033[93m"+"Your SHA512 = " + hash+"\033[0m"+"\n\n\n")
+
+  key = ""
